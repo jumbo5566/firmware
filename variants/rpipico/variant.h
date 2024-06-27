@@ -42,7 +42,7 @@
 #define LORA_CS 13
 
 #define LORA_DIO0 RADIOLIB_NC
-#define LORA_RESET 15
+#define LORA_RESET 16
 #define LORA_DIO1 20
 #define LORA_DIO2 2
 #define LORA_DIO3 RADIOLIB_NC
