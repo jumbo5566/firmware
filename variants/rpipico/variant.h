@@ -3,14 +3,19 @@
 // #define RADIOLIB_SOFTWARE_SERIAL_UNSUPPORTED 1
 
 #define ARDUINO_ARCH_AVR
+#define HAS_SCREEN 1
+#define HAS_GPS 1
 
 // default I2C pins:
 //SDA = 4
 //SCL = 5
-
+#define I2C_SDA1 18
+#define I2C_SCL1 19
 // Recommended pins for SerialModule:
 // txd = 8
 // rxd = 9
+#define GPS_RX_PIN 1
+#define GPS_TX_PIN 0
 
 #define EXT_NOTIFY_OUT 22
 #define BUTTON_PIN 17
@@ -40,6 +45,7 @@
 #define LORA_DIO2 2
 #define LORA_DIO3 RADIOLIB_NC
 
+#define USE_LLCC68
 #ifdef USE_SX1262
 #define SX126X_CS LORA_CS
 #define SX126X_DIO1 LORA_DIO1
