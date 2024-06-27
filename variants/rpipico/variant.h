@@ -5,8 +5,8 @@
 #define ARDUINO_ARCH_AVR
 
 // default I2C pins:
-SDA = 4
-SCL = 5
+//SDA = 4
+//SCL = 5
 
 // Recommended pins for SerialModule:
 // txd = 8
