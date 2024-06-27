@@ -27,8 +27,8 @@
 #define ADC_MULTIPLIER 3.1 // 3.0 + a bit for being optimistic
 #define BATTERY_SENSE_RESOLUTION_BITS ADC_RESOLUTION
 
-#define USE_SX1262
-
+//#define USE_SX1262
+#define USE_SX1268
 #undef LORA_SCK
 #undef LORA_MISO
 #undef LORA_MOSI
@@ -45,8 +45,8 @@
 #define LORA_DIO2 2
 #define LORA_DIO3 RADIOLIB_NC
 
-#define USE_LLCC68
-#ifdef USE_SX1262
+//#define USE_LLCC68
+//#ifdef USE_SX1262
 #define SX126X_CS LORA_CS
 #define SX126X_DIO1 LORA_DIO1
 #define SX126X_BUSY LORA_DIO2
