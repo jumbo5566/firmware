@@ -18,8 +18,8 @@
 #define HAS_SCREEN 1
 
 // Redefine I2C0 pins to avoid collision with UART1/Serial2.
-#define I2C_SDA 8
-#define I2C_SCL 9
+//#define I2C_SDA 8
+//#define I2C_SCL 9
 
 // Redefine Waveshare UPS-A/B I2C_1 pins:
 #define I2C_SDA1 18
