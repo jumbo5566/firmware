@@ -3,7 +3,8 @@
 // #define RADIOLIB_SOFTWARE_SERIAL_UNSUPPORTED 1
 
 #define ARDUINO_ARCH_AVR
-
+#define SERIAL2_TX 8
+#define SERIAL2_RX 9
 #define log_e(...) Serial2.printf(__VA_ARGS__)
 #define log_i(...) Serial2.printf(__VA_ARGS__)
 #define log_d(...) Serial2.printf(__VA_ARGS__)
@@ -16,8 +17,7 @@
 #define I2C_SDA1 18
 #define I2C_SCL1 19
 
-#define SERIAL2_TX 8
-#define SERIAL2_RX 9
+
 //#define PIN_GPS_PPS 16
 //#define PIN_GPS_STANDBY 17
 //#define GPS_UBLOX
