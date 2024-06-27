@@ -26,10 +26,11 @@
 // ratio of voltage divider = 3.0 (R17=200k, R18=100k)
 #define ADC_MULTIPLIER 3.1 // 3.0 + a bit for being optimistic
 #define BATTERY_SENSE_RESOLUTION_BITS ADC_RESOLUTION
-#define USE_RF95 // RFM95/SX127x
-// #define USE_SX1280
+
+//#define USE_RF95 // RFM95/SX127x
+//#define USE_SX1280
 //#define USE_SX1262
-//#define USE_SX1268
+#define USE_SX1268
 #undef LORA_SCK
 #undef LORA_MISO
 #undef LORA_MOSI
