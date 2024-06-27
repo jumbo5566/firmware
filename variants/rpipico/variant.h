@@ -2,6 +2,10 @@
 // #define RADIOLIB_TONE_UNSUPPORTED 1
 // #define RADIOLIB_SOFTWARE_SERIAL_UNSUPPORTED 1
 
+#define log_e(...) Serial2.printf(__VA_ARGS__)
+#define log_i(...) Serial2.printf(__VA_ARGS__)
+#define log_d(...) Serial2.printf(__VA_ARGS__)
+
 #define ARDUINO_ARCH_AVR
 #define HAS_SCREEN 1
 #define HAS_GPS 1
