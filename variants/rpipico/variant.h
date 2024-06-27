@@ -2,11 +2,12 @@
 // #define RADIOLIB_TONE_UNSUPPORTED 1
 // #define RADIOLIB_SOFTWARE_SERIAL_UNSUPPORTED 1
 
+#define ARDUINO_ARCH_AVR
+
 #define log_e(...) Serial2.printf(__VA_ARGS__)
 #define log_i(...) Serial2.printf(__VA_ARGS__)
 #define log_d(...) Serial2.printf(__VA_ARGS__)
 
-#define ARDUINO_ARCH_AVR
 #define HAS_SCREEN 1
 #define HAS_GPS 1
 
@@ -19,10 +20,10 @@
 #define SERIAL2_RX 9
 //#define PIN_GPS_PPS 16
 //#define PIN_GPS_STANDBY 17
-#define GPS_UBLOX
+//#define GPS_UBLOX
 #define GPS_RX_PIN 1
 #define GPS_TX_PIN 0
-#define GPS_DEBUG
+//#define GPS_DEBUG
 
 #define EXT_NOTIFY_OUT 22
 #define BUTTON_PIN 17
