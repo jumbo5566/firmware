@@ -1,7 +1,7 @@
 name: Build RPI2040
 
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
       board:
         required: true
