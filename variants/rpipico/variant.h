@@ -20,8 +20,8 @@
 //#define PIN_GPS_PPS 16
 //#define PIN_GPS_STANDBY 17
 #define GPS_UBLOX
-#define GPS_RX_PIN 0
-#define GPS_TX_PIN 1
+#define GPS_RX_PIN 1
+#define GPS_TX_PIN 0
 #define GPS_DEBUG
 
 #define EXT_NOTIFY_OUT 22
