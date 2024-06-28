@@ -5,22 +5,17 @@
 #define ARDUINO_ARCH_AVR
 
 // Build with slow system clock enabled to reduce power consumption.
-//#define RP2040_SLOW_CLOCK
+#define RP2040_SLOW_CLOCK
 
 #ifdef RP2040_SLOW_CLOCK
 // Redefine UART1 serial log output to avoid collision with UART0 for GPS.
-
-#define SERIAL2_RX 8
-#define SERIAL2_TX 9
-
+#define SERIAL2_TX 8
+#define SERIAL2_RX 9
 // Reroute log output in SensorLib when USB is not available
 #define log_e(...) Serial2.printf(__VA_ARGS__)
 #define log_i(...) Serial2.printf(__VA_ARGS__)
 #define log_d(...) Serial2.printf(__VA_ARGS__)
 #endif
-
-#define PIN_SERIAL1_RX 1
-#define PIN_SERIAL1_TX 0
 
 #define HAS_SCREEN 1
 #define HAS_GPS 1
@@ -30,14 +25,12 @@
 #define I2C_SDA1 18
 #define I2C_SCL1 19
 
-#define GPS_RX_PIN PIN_SERIAL1_RX
-#define GPS_TX_PIN PIN_SERIAL1_TX
 
 //#define PIN_GPS_PPS 16
 //#define PIN_GPS_STANDBY 17
 //#define GPS_UBLOX
-#define GPS_RX_PIN PIN_SERIAL1_RX
-#define GPS_TX_PIN PIN_SERIAL1_TX
+#define GPS_RX_PIN 1
+#define GPS_TX_PIN 0
 //#define GPS_DEBUG
 
 #define EXT_NOTIFY_OUT 22
