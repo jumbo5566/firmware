@@ -31,7 +31,7 @@
 //#define GPS_UBLOX
 #define GPS_RX_PIN 1
 #define GPS_TX_PIN 0
-//#define GPS_DEBUG
+#define GPS_DEBUG
 
 #define EXT_NOTIFY_OUT 22
 #define BUTTON_PIN 17
