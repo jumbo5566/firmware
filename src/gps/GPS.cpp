@@ -34,7 +34,7 @@
 #define GPS_IDLE_THRESHOLD_SECONDS 10
 #endif
 
-#if defined(NRF52840_XXAA) || defined(NRF52833_XXAA) || defined(ARCH_ESP32) || defined(ARCH_PORTDUINO) || defined(RPI_PICO)
+#if defined(NRF52840_XXAA) || defined(NRF52833_XXAA) || defined(ARCH_ESP32) || defined(ARCH_PORTDUINO) || defined(ARCH_RP2040)
 HardwareSerial *GPS::_serial_gps = &Serial1;
 #else
 HardwareSerial *GPS::_serial_gps = NULL;
@@ -1379,8 +1379,8 @@ GPS *GPS::createGps()
         // In esp32 framework, setRxBufferSize needs to be initialized before Serial
         _serial_gps->setRxBufferSize(SERIAL_BUFFER_SIZE); // the default is 256
 #endif
-#ifdef RPI_PICO
-        //_serial_gps->setPollingMode(true);
+#ifdef ARCH_RP2040
+        _serial_gps->setFIFOSize(256);
 #endif
 //  ESP32 has a special set of parameters vs other arduino ports
 #if defined(ARCH_ESP32)
