@@ -1380,7 +1380,7 @@ GPS *GPS::createGps()
         _serial_gps->setRxBufferSize(SERIAL_BUFFER_SIZE); // the default is 256
 #endif
 #ifdef ARCH_RP2040
-        _serial_gps->setFIFOSize(256);
+       // _serial_gps->setFIFOSize(256);
 #endif
 //  ESP32 has a special set of parameters vs other arduino ports
 #if defined(ARCH_ESP32)
