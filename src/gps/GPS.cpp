@@ -1379,7 +1379,9 @@ GPS *GPS::createGps()
         // In esp32 framework, setRxBufferSize needs to be initialized before Serial
         _serial_gps->setRxBufferSize(SERIAL_BUFFER_SIZE); // the default is 256
 #endif
-
+#ifdef RPI_PICO
+        _serial_gps->setFIFOSize(128);
+#endif
 //  ESP32 has a special set of parameters vs other arduino ports
 #if defined(ARCH_ESP32)
         LOG_DEBUG("Using GPIO%d for GPS RX\n", new_gps->rx_gpio);
