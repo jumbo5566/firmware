@@ -29,9 +29,6 @@
 #define I2C_SDA1 18
 #define I2C_SCL1 19
 
-#define GPS_RX_PIN PIN_SERIAL1_RX
-#define GPS_TX_PIN PIN_SERIAL1_TX
-
 //#define PIN_GPS_PPS 16
 //#define PIN_GPS_STANDBY 17
 //#define GPS_UBLOX
