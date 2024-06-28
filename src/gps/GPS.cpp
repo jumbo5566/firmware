@@ -34,7 +34,7 @@
 #define GPS_IDLE_THRESHOLD_SECONDS 10
 #endif
 
-#if defined(NRF52840_XXAA) || defined(NRF52833_XXAA) || defined(ARCH_ESP32) || defined(ARCH_PORTDUINO) || defined(RP2040_SLOW_CLOCK)
+#if defined(NRF52840_XXAA) || defined(NRF52833_XXAA) || defined(ARCH_ESP32) || defined(ARCH_PORTDUINO) || defined(RPI_PICO)
 HardwareSerial *GPS::_serial_gps = &Serial1;
 #else
 HardwareSerial *GPS::_serial_gps = NULL;
