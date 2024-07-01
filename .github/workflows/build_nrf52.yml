@@ -1,7 +1,7 @@
 name: Build NRF52
 
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
       board:
         required: true
